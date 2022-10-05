@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <!-- Link daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Link Tailwind -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="background-image: url(bg.png);" class="py-20 pb-96">
+
+
+
+
+    <!-- Main Section -->
+    <main>
+        <!-- Accordion Section for Blog Button -->
+        <section class="w-3/4 mx-auto">
+            <div id="accordion-color" data-accordion="collapse"
+                data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+
+                <h2 id="accordion-color-heading-1">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 hover:bg-blue-100 dark:hover:bg-gray-800 bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+                        data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                        aria-controls="accordion-color-body-1">
+                        <span>What is the difference between local storage and session storage?</span>
+                        <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-1" class="" aria-labelledby="accordion-color-heading-1">
+                    <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-black">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">sessionStorage is similar to localStorage ; the
+                            difference is that while data in localStorage doesn't expire, data in sessionStorage is
+                            cleared when the page session ends. Whenever a document is loaded in a particular tab in the
+                            browser, a unique page session gets created and assigned to that particular tab.</p>
+                        <p>The one major difference between localStorage and sessionStorage is the expiration date.
+                            <li>localStorage persists the storage across browser sessions. So even if the domain is
+                                opened in a new tab, or the browser is closed and reopened, the storage is saved. There
+                                is no expiration.</li>
+                            <li>sessionStorage is cleared when the page session ends. A page session lasts as long as
+                                the tab or the browser is open. Therefore, when you open a new tab or a new window, this
+                                creates a new session and new storage.</li>
+                        </p>
+                    </div>
+                </div>
+
+
+                <h2 id="accordion-color-heading-2">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                        data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                        aria-controls="accordion-color-body-2">
+                        <span>What is the difference between global scope and block scope?</span>
+                        <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                    <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">The variables defined outside of any function
+                            or curly brackets are known as global variables and have global scope. Global scope means
+                            that the variables can be accessed from any part of that program, any function or
+                            conditional state can access that variable.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Block scope is also a sub-type of local scope.
+                            The block scope can be defined as the scope of the variables inside the curly brackets {}.
+                            Now, these curly brackets can be of loops, or conditional statements, or something else. You
+                            are only allowed to refer to these variables from within the curly brackets {}.</p>
+                    </div>
+                </div>
+
+
+                <h2 id="accordion-color-heading-3">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                        data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                        aria-controls="accordion-color-body-3">
+                        <span>How event loop works in javascript?</span>
+                        <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                    <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">The Event Loop has one simple job — to monitor
+                            the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take
+                            the first event from the queue and will push it to the Call Stack, which effectively runs
+                            it. Such an iteration is called a tick in the Event Loop.</p>
+                    </div>
+                </div>
+
+
+                <h2 id="accordion-color-heading-4">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                        data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+                        aria-controls="accordion-color-body-4">
+                        <span>How we get undefined in javascript?</span>
+                        <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                    <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">
+                            The undefined property indicates that a variable has not been assigned a value, or not
+                            declared at all. Different time different code makes result as undefined.
+                            Examples:
+                        </p>
+                        <li>Variable declared but not defined</li>
+                        <li>Type of an empty string</li>
+                        <li>Check if a variable is defined or not</li>
+                        <li>Uninitialized variable</li>
+                        <li>Accessing a non-existing property</li>
+                        <li>Function return nothing</li>
+                        <li>Finding property is not in an array or object</li>
+                        <li>When variable value not set</li>
+                        <li>Void operator</li>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>
